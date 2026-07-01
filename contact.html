@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ASHORA | Contact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+
+    <div id="progressBar"></div>
+
+    <div id="loader">
+
+    <div class="loader-logo">
+
+        ASHORA
+
+    </div>
+
+</div>
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+ASHORA
+
+</div>
+
+<div class="menu-toggle">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html" class="active">Contact</a></li>
+
+</ul>
+
+<div class="icons">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<i class="fa-regular fa-heart"></i>
+
+<div class="cart-icon">
+
+<a href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount">0</span>
+
+</a>
+
+</div>
+
+<button id="themeBtn">
+
+🌙
+
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="shop-hero">
+
+<h1>Contact Us</h1>
+
+<p>We're always here to help you.</p>
+
+</section>
+
+<section class="contact">
+
+<div class="contact-info">
+
+<h2>Get In Touch</h2>
+
+<p>
+
+Feel free to contact ASHORA for any questions, support or feedback.
+
+</p>
+
+<div class="info-box">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<span>Jobner,Jaipur, Rajasthan, India</span>
+
+</div>
+
+<div class="info-box">
+
+<i class="fa-solid fa-phone"></i>
+
+<span>+91 8949639703</span>
+
+</div>
+
+<div class="info-box">
+
+<i class="fa-solid fa-envelope"></i>
+
+<span>ashokkumar@gmail.com</span>
+
+</div>
+
+<div class="info-box">
+
+<i class="fa-solid fa-clock"></i>
+
+<span>Mon - Sat : 9:00 AM - 8:00 PM</span>
+
+</div>
+
+</div>
+
+<div class="contact-form">
+
+<h2>Send Message</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Subject" required>
+
+<textarea rows="6" placeholder="Write your message..."></textarea>
+
+<button class="place-order">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section class="map">
+
+<iframe
+src="https://www.google.com/maps?q=Jaipur&output=embed"
+loading="lazy">
+</iframe>
+
+</section>
+<section class="newsletter">
+
+<h2>Stay Connected With ASHORA</h2>
+
+<p>Subscribe to receive exclusive offers and updates.</p>
+
+<form>
+
+<input type="email" placeholder="Enter your email">
+
+<button type="submit">Subscribe</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<div class="footer-logo">
+
+<h2>ASHORA</h2>
+
+<p>Luxury Fashion Store</p>
+
+</div>
+
+<div class="footer-links">
+
+<a href="index.html">Home</a>
+
+<a href="shop.html">Shop</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<p class="copyright">
+
+© 2026 ASHORA. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<div id="contactToast" class="toast">
+
+✅ Message Sent Successfully!
+
+</div>
+
+<button id="scrollTopBtn">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="js/store.js"></script>
+
+<script>
+
+const contactForm=document.querySelector(".contact-form form");
+
+const contactToast=document.getElementById("contactToast");
+
+if(contactForm){
+
+contactForm.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+contactToast.classList.add("show");
+
+contactForm.reset();
+
+setTimeout(()=>{
+
+contactToast.classList.remove("show");
+
+},2500);
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
