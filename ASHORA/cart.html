@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ASHORA | Shopping Cart</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    
+
+    <div id="progressBar"></div>
+
+    <div id="loader">
+
+    <div class="loader-logo">
+
+        ASHORA
+
+    </div>
+
+</div>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+ASHORA
+
+</div>
+
+<div class="menu-toggle">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="icons">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<i class="fa-regular fa-heart"></i>
+
+<div class="cart-icon">
+
+<a href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount">0</span>
+
+</a>
+
+</div>
+
+<button id="themeBtn">
+
+🌙
+
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= CART HERO ================= -->
+
+<section class="shop-hero">
+
+<h1>
+
+Shopping Cart
+
+</h1>
+
+<p>
+
+Review your selected products before checkout.
+
+</p>
+
+</section>
+
+<!-- ================= CART ================= -->
+
+<section class="cart-page">
+
+<div class="cart-items">
+
+<h2>
+
+Your Cart
+
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Product</th>
+
+<th>Price</th>
+
+<th>Quantity</th>
+
+<th>Total</th>
+
+<th>Remove</th>
+
+</tr>
+
+</thead>
+
+<tbody id="cart-body">
+
+<tr>
+
+<td>
+
+<div class="cart-product">
+
+<img src="images/products/p1.jpg">
+
+<span>
+
+Nike Air Max
+
+</span>
+
+</div>
+
+</td>
+
+<td>
+
+₹5,999
+
+</td>
+
+<td>
+
+<div class="qty-box">
+
+<button>-</button>
+
+<input type="text" value="1">
+
+<button>+</button>
+
+</div>
+
+</td>
+
+<td>
+
+₹5,999
+
+</td>
+
+<td>
+
+<button class="delete-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+<!-- ================= CART SUMMARY ================= -->
+
+<div class="cart-summary">
+
+    <h2>Order Summary</h2>
+
+    <div class="summary-row">
+
+        <span>Subtotal</span>
+
+        <span id="subtotal">₹5,999</span>
+
+    </div>
+
+    <div class="summary-row">
+
+        <span>Shipping</span>
+
+        <span>FREE</span>
+
+    </div>
+
+    <div class="summary-row">
+
+        <span>GST (18%)</span>
+
+        <span id="gst">₹1,080</span>
+
+    </div>
+
+    <hr>
+
+    <div class="summary-row total">
+
+        <span>Total</span>
+
+        <span id="grand-total">₹7,079</span>
+
+    </div>
+
+    <div class="coupon">
+
+        <input type="text" placeholder="Coupon Code">
+
+        <button>Apply</button>
+
+    </div>
+
+    <button class="checkout-btn">
+
+        Proceed To Checkout
+
+    </button>
+
+</div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <h2>Subscribe For Latest Offers</h2>
+
+    <p>
+
+        Get updates about new arrivals and exclusive discounts.
+
+    </p>
+
+    <form>
+
+        <input type="email" placeholder="Enter your email">
+
+        <button type="submit">
+
+            Subscribe
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <h2>ASHORA</h2>
+
+        <p>Luxury Fashion Store</p>
+
+    </div>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="shop.html">Shop</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div class="social-icons">
+
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <i class="fa-brands fa-linkedin"></i>
+
+        <i class="fa-brands fa-github"></i>
+
+    </div>
+
+    <p class="copyright">
+
+        © 2026 ASHORA. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<script src="js/store.js"></script>
+<script src="js/cart.js"></script>
+
+<button id="scrollTopBtn">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+</body>
+</html>
