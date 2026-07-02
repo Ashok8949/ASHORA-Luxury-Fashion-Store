@@ -16,6 +16,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <link rel="stylesheet" href="css/style.css">
 
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="icon" type="image/png" href="images/icons/favicon.png">
+
 </head>
 
 <body>
@@ -35,63 +39,46 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 </div>
 <header>
 
-<nav class="navbar">
+    <nav class="navbar">
 
-<div class="logo">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo/logo.png" alt="ASHORA Logo">
+            </a>
+        </div>
 
-ASHORA
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
-</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
 
-<div class="menu-toggle">
+        <div class="icons">
 
-<i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
 
-</div>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cartCount">0</span>
+                </a>
+            </div>
 
-<ul class="nav-links">
+            <button id="themeBtn">🌙</button>
 
-<li><a href="index.html">Home</a></li>
+        </div>
 
-<li><a href="shop.html">Shop</a></li>
-
-<li><a href="about.html">About</a></li>
-
-<li><a href="contact.html" class="active">Contact</a></li>
-
-</ul>
-
-<div class="icons">
-
-<i class="fa-solid fa-magnifying-glass"></i>
-
-<i class="fa-regular fa-heart"></i>
-
-<div class="cart-icon">
-
-<a href="cart.html">
-
-<i class="fa-solid fa-cart-shopping"></i>
-
-<span id="cartCount">0</span>
-
-</a>
-
-</div>
-
-<button id="themeBtn">
-
-🌙
-
-</button>
-
-</div>
-
-</nav>
+    </nav>
 
 </header>
 
-<section class="shop-hero">
+<section class="contact-hero">
 
 <h1>Contact Us</h1>
 

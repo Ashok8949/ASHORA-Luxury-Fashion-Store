@@ -40,6 +40,8 @@ buttons.forEach((button, index) => {
 
         localStorage.setItem("ashoraCart", JSON.stringify(cart));
 
+        updateCounter();
+
         button.innerHTML = "✔ Added";
         let toast = document.getElementById("toast");
 
@@ -130,30 +132,27 @@ heart.className="fa-regular fa-heart wishlist";
 //==============================
 // CART COUNTER
 //==============================
+function updateCounter() {
 
-function updateCounter(){
+    let cart = JSON.parse(localStorage.getItem("ashoraCart")) || [];
 
-let cart=JSON.parse(localStorage.getItem("ashoraCart"))||[];
+    let total = 0;
 
-let count=0;
+    cart.forEach(item => {
+        total += item.quantity;
+    });
 
-cart.forEach(item=>{
+    let badge = document.getElementById("cartCount");
 
-count+=item.quantity;
-
-});
-
-let badge=document.getElementById("cartCount");
-
-if(badge){
-
-badge.innerHTML=count;
-
-}
+    if (badge) {
+        badge.innerHTML = total;
+    }
 
 }
 
 updateCounter();
+
+
 
 
 //==============================
@@ -412,3 +411,23 @@ switch (popupTitle.innerText) {
     });
 
 }
+//==============================
+// CART COUNT
+//==============================
+
+function updateCartCount() {
+
+    let cart = JSON.parse(localStorage.getItem("ashoraCart")) || [];
+
+    let count = document.getElementById("cart-count");
+
+    if (count) {
+
+        count.innerText = cart.reduce((total, item) => total + item.quantity, 0);
+
+    }
+
+}
+
+// Page load hote hi count update
+updateCartCount();
